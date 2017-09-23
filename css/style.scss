@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 $primaryFont: 'Lato', sans-serif;
+$breakpoint-tablet: 340px;
 
 .exampleWorks{
   font-family: $primaryFont;
@@ -25,6 +26,9 @@ ul#imageGallery {
     padding: 8px;
     background: ghostwhite;
     margin: 10px;
+    @media screen and (max-width: $breakpoint-tablet) {
+      margin: 0;
+    }
     overflow: hidden;
 
     a {
@@ -32,7 +36,7 @@ ul#imageGallery {
 
       img {
         display: block;
-        max-width: 320px;
+        max-width: 300px;
         overflow: hidden;
         -moz-transition: all 1s ease-out;
         -o-transition: all 1s ease-out;

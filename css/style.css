@@ -19,11 +19,14 @@ ul#imageGallery {
     background: ghostwhite;
     margin: 10px;
     overflow: hidden; }
+    @media screen and (max-width: 340px) {
+      ul#imageGallery li {
+        margin: 0; } }
     ul#imageGallery li a {
       text-decoration: none; }
       ul#imageGallery li a img {
         display: block;
-        max-width: 320px;
+        max-width: 300px;
         overflow: hidden;
         -moz-transition: all 1s ease-out;
         -o-transition: all 1s ease-out;

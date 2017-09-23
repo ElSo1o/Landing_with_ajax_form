@@ -17,7 +17,7 @@
     </head>
     <body>
         <div class="main">
-            <header>
+            <div>
                 <div class="header">
                     <div class="slogan">
                         <p>3D Atelier - выполним больше для достижения лучших результатов</p>
@@ -56,74 +56,178 @@
 
                     </div>
                 </div>
-                <div class="popUp">
+                <div class="modal fade bs-modal-sm modal1" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                            <br>
+                            <div class="bs-example bs-example-tabs">
+                                <ul id="myTab" class="nav nav-tabs">
+                                    <li class="active"><a href="#signup" data-toggle="tab">Оставить сообщение</a></li>
+                                    <li class=""><a href="#why" data-toggle="tab">Зачем?</a></li>
+                                </ul>
+                            </div>
+                            <div class="modal-body">
+                                <div id="myTabContent" class="tab-content">
+                                    <div class="tab-pane fade in" id="why">
+                                        <p><?php the_field("form_quest_1")?></p>
+                                    </div>
+                                    <div class="tab-pane fade active in" id="signup">
+                                        <form class="form-horizontal" id="form_1">
+                                            <fieldset>
+                                                <div class="control-group">
+                                                    <label class="control-label" for="userid">Ваш Email</label>
+                                                    <div class="alert_forms_danger alert_danger_for_email">
+                                                        <div class="alert alert-danger">
+                                                            <h5>Введены не корректные данные!</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="alert_forms_success alert_success_for_email">
+                                                        <div class="alert alert-success">
+                                                            <h5>Все правильно!</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="controls input-group">
+                                                        <span class="input-group-addon">@</span>
+                                                        <input id="userid" name="userid" class="form-control input-large" type="text" placeholder="Введите ваш эмаил адресс"  data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше имя" required="">
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label class="control-label" for="tel">Ваш номер телефона</label>
+                                                    <div class="alert_forms_danger alert_danger_for_tel">
+                                                        <div class="alert alert-danger">
+                                                            <h5>Введены не корректные данные!</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="alert_forms_success alert_success_for_tel">
+                                                        <div class="alert alert-success">
+                                                            <h5>Все правильно!</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="controls">
+                                                        <input id="tel" name="tel" class="form-control input-large" type="tel" placeholder="+3(099)123-45-67" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваш номер телефона,не меньше 8-и символов" required="">
+                                                    </div>
 
-
-                    <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                                </div>
+                                                <div class="control-group alert_forms">
+                                                    <div class="alert alert-info">
+                                                        <h5>Внимание!</h5>
+                                                        <p>Все поля обязательны для заполнения</p>
+                                                    </div>
+                                                </div>
+                                                <div class="progress progress-striped active progress_forms">
+                                                    <div class="progress-bar progress-bar-success" style="width: 100%">
+                                                        <span class="sr-only">Завершено 40%</span>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label class="control-label" for="confirmsignup1"></label>
+                                                    <div class="controls">
+                                                        <button id="confirmsignup1" name="confirmsignup1" class="btn btn-success" disabled="disabled">Отправить</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <center>
+                                    <button type="button" class="btn btn-default contact_form_btn" data-dismiss="modal">Закрыть</button>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="modal fade bs-modal-sm modal2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-sm">
                             <div class="modal-content">
                                 <br>
                                 <div class="bs-example bs-example-tabs">
-                                    <ul id="myTab" class="nav nav-tabs">
-                                        <li class="active"><a href="#signup" data-toggle="tab">Оставить сообщение</a></li>
-                                        <li class=""><a href="#why" data-toggle="tab">Зачем?</a></li>
+                                    <ul id="myTab2" class="nav nav-tabs">
+                                        <li class="active"><a href="#signup2" data-toggle="tab">Оставить сообщение</a></li>
+                                        <li class=""><a href="#why2" data-toggle="tab">Зачем?</a></li>
                                     </ul>
                                 </div>
                                 <div class="modal-body">
-                                    <div id="myTabContent" class="tab-content">
-                                        <div class="tab-pane fade in" id="why">
-                                            <p>Провести утро за завтраком с 3D Atelier значит — в непринужденной обстановке, за чашкой кофе обсудить возможности промышленного дизайна и перспективы развития вашего бизнеса. Задать любые вопросы, касающиеся услуг 3D моделирования и 3D печати, и обсудить варианты их решения — от основателя нашей студии промдизайна</p>
-                                            <p></p><br> Встречи за завтраком проходят по предварительной договоренности с 10:00 до 12:00 в нашем офисе или в ресторанах в центре Киева.</p>
+                                    <div id="myTabContent2" class="tab-content">
+                                        <div class="tab-pane fade in" id="why2">
+                                            <p><?php the_field('form_quest_2') ?></p>
                                         </div>
-                                        <div class="tab-pane fade active in" id="signup">
-                                            <form class="form-horizontal">
+                                        <div class="tab-pane fade active in" id="signup2">
+                                            <form class="form-horizontal" id="form_2">
                                                 <fieldset>
 
                                                     <div class="control-group">
-                                                        <label class="control-label" for="Email">Ваше имя</label>
+                                                        <label class="control-label" for="userid2">Ваше имя</label>
+                                                        <div class="alert_forms_danger alert_danger_for_name">
+                                                            <div class="alert alert-danger">
+                                                                <h5>Введены не корректные данные!</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="alert_forms_success alert_success_for_name">
+                                                            <div class="alert alert-success">
+                                                                <h5>Все правильно!</h5>
+                                                            </div>
+                                                        </div>
                                                         <div class="controls input-group">
                                                             <span class="input-group-addon">Имя</span>
-                                                            <input id="Email" name="Email" class="form-control" type="text" placeholder="Введите ваше имя" class="input-large" data-toggle="tooltip" data-placement="right" title="Введите ваше имя" required="">
+                                                            <input id="userid2" name="userid2" class="form-control input-large" type="text" placeholder="Введите ваше имя"  data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше имя" required="">
                                                         </div>
                                                     </div>
-
-
                                                     <div class="control-group">
-                                                        <label class="control-label" for="userid">Ваш Email</label>
+                                                        <label class="control-label" for="email">Ваш Email</label>
+                                                        <div class="alert_forms_danger alert_danger_for_userid2">
+                                                            <div class="alert alert-danger">
+                                                                <h5>Введены не корректные данные!</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="alert_forms_success alert_success_for_userid2">
+                                                            <div class="alert alert-success">
+                                                                <h5>Все правильно!</h5>
+                                                            </div>
+                                                        </div>
                                                         <div class="controls input-group">
                                                             <span class="input-group-addon">@</span>
-                                                            <input id="userid" name="userid" class="form-control" type="text" placeholder="Введите ваш эмаил адресс" class="input-large" data-toggle="tooltip" data-placement="right" title="Введите ваш эмайл" required="">
+                                                            <input id="email" name="email" class="form-control input-large" type="text" placeholder="Введите ваш эмаил адресс" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваш эмайл" required="">
                                                         </div>
                                                     </div>
-
-
                                                     <div class="control-group">
-                                                        <label class="control-label" for="password">Ваш номер телефона</label>
+                                                        <label class="control-label" for="tel2">Ваш номер телефона</label>
+                                                        <div class="alert_forms_danger alert_danger_for_tel2">
+                                                            <div class="alert alert-danger">
+                                                                <h5>Введены не корректные данные!</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="alert_forms_success alert_success_for_tel2">
+                                                            <div class="alert alert-success">
+                                                                <h5>Все правильно!</h5>
+                                                            </div>
+                                                        </div>
                                                         <div class="controls">
-                                                            <input id="password" name="password" class="form-control" type="tel" placeholder="+3(099)123-45-67" class="input-large" data-toggle="tooltip" data-placement="right" title="Введите ваше номер телефона,не меньше 8-и символов" required="">
+                                                            <input id="tel2" name="tel2" class="form-control" type="tel" placeholder="+3(099)123-45-67" class="input-large" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше номер телефона,не меньше 8-и символов"  required="">
                                                         </div>
                                                     </div>
-
-
                                                     <div class="control-group">
-                                                        <label class="control-label" for="reenterpassword">Название кампании</label>
+                                                        <label class="control-label" for="message2">Оставить нам сообщение</label>
                                                         <div class="controls">
-                                                            <input id="reenterpassword" class="form-control" name="reenterpassword" type="text" placeholder="Введите название вашей кампании" class="input-large" data-toggle="tooltip" data-placement="right" title="Введите название вашей кампании" required="">
+                                                            <textarea name="message2" id="message2" class="form-control" type="text" placeholder="Оставить нам сообщение" class="input-large" data-toggle="popover"  data-trigger="hover" data-placement="right" title="Подсказка" data-content="Сообщите нам о вашем проекте и мы сделаем для Вас спец. предложение!" rows="3"></textarea>
                                                         </div>
                                                     </div>
-
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="message">Оставить нам сообщение</label>
-                                                        <div class="controls">
-                                                            <textarea name="message" id="message" class="form-control" type="text" placeholder="Оставить нам сообщение" class="input-large" data-toggle="tooltip" data-placement="right" title="Оставьте нам сообщение,мы свяжимся с вами!" rows="3"></textarea>
+                                                    <div class="control-group alert_forms">
+                                                        <div class="alert alert-info">
+                                                            <h5>Внимание!</h5>
+                                                            <p>Все поля обязательны для заполнения</p>
                                                         </div>
                                                     </div>
-
-
+                                                    <div class="progress progress-striped active progress_forms">
+                                                        <div class="progress-bar progress-bar-success" style="width: 100%">
+                                                            <span class="sr-only">Завершено 100%</span>
+                                                        </div>
+                                                    </div>
                                                     <div class="control-group">
-                                                        <label class="control-label" for="confirmsignup"></label>
+                                                        <label class="control-label" for="confirmsignup2"></label>
                                                         <div class="controls">
-                                                            <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Отправить</button>
+                                                            <button id="confirmsignup2" name="confirmsignup2" class="btn btn-success contact_form_btn" disabled="disabled">Отправить</button>
                                                         </div>
                                                     </div>
                                                 </fieldset>
@@ -140,6 +244,7 @@
                         </div>
                     </div>
                 </div>
+        </div>
             </header>
             <section>
                 <div class="capabilities">
