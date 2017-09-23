@@ -17,234 +17,234 @@
     </head>
     <body>
         <div class="main">
-            <div>
-                <div class="header">
-                    <div class="slogan">
-                        <p>3D Atelier - выполним больше для достижения лучших результатов</p>
-                        <p>+38(095)288-36-48</p>
-                        <p>+38(096)506-36-48</p>
-                    </div>
-                    <div class="social">
-                        <div class="social-icon">
-                            <a href="#">
-                                <img src="img/Facebook.png" alt="картинка не загрузилась">
-                            </a>
-                            <a href="#">
-                                <img src="img/instagram-logo.png" alt="картинка не загрузилась">
-                            </a>
-                            <!--<a href="#">-->
-                                <!--<img src="img/vk-logo.png" alt="картинки не загрузилась">-->
-                            <!--</a>-->
+            <header>
+                <div class="main_header_bg">
+                    <div class="header">
+                        <div class="slogan">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus.</p>
+                            <p>+38(095)288-36-48</p>
+                            <p>+38(096)506-36-48</p>
                         </div>
-                    </div>
-                </div>
-                <div class="header-bg">
-                    <div class="title_form">
-                        <h1><p>3D печать</p>
-                            <p>Прототипирование</p>
-                        </h1>
-                        <button type="button" class="btn btn-success btn-lg" href="#signup" data-toggle="modal" data-target=".modal1">Заказать</button>
-                        <h2>
-                            <p>3D печать FDM - от 150 грн. (5 грн/грамм) </p>
-                            <p>SLA - от 0.8$/грамм.</p>
-                        </h2>
-                        <div class="form">
-                            <form>
-                                <button type="button" class="btn btn-warning btn-lg" href="#signup2" data-toggle="modal" data-target=".modal2">Мне дорого</button>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="modal fade bs-modal-sm modal1" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <br>
-                            <div class="bs-example bs-example-tabs">
-                                <ul id="myTab" class="nav nav-tabs">
-                                    <li class="active"><a href="#signup" data-toggle="tab">Оставить сообщение</a></li>
-                                    <li class=""><a href="#why" data-toggle="tab">Зачем?</a></li>
-                                </ul>
+                        <div class="social">
+                            <div class="social-icon">
+                                <a href="https://www.facebook.com/Kiyv.Atelier.3D/">
+                                    <img src="img/Facebook-min.png" alt="картинка не загрузилась">
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <img src="img/inst_logo-min.png" alt="картинка не загрузилась">
+                                </a>
                             </div>
-                            <div class="modal-body">
-                                <div id="myTabContent" class="tab-content">
-                                    <div class="tab-pane fade in" id="why">
-                                        <p><?php the_field("form_quest_1")?></p>
-                                    </div>
-                                    <div class="tab-pane fade active in" id="signup">
-                                        <form class="form-horizontal" id="form_1">
-                                            <fieldset>
-                                                <div class="control-group">
-                                                    <label class="control-label" for="userid">Ваш Email</label>
-                                                    <div class="alert_forms_danger alert_danger_for_email">
-                                                        <div class="alert alert-danger">
-                                                            <h5>Введены не корректные данные!</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="alert_forms_success alert_success_for_email">
-                                                        <div class="alert alert-success">
-                                                            <h5>Все правильно!</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="controls input-group">
-                                                        <span class="input-group-addon">@</span>
-                                                        <input id="userid" name="userid" class="form-control input-large" type="text" placeholder="Введите ваш эмаил адресс"  data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше имя" required="">
-                                                    </div>
-                                                </div>
-                                                <div class="control-group">
-                                                    <label class="control-label" for="tel">Ваш номер телефона</label>
-                                                    <div class="alert_forms_danger alert_danger_for_tel">
-                                                        <div class="alert alert-danger">
-                                                            <h5>Введены не корректные данные!</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="alert_forms_success alert_success_for_tel">
-                                                        <div class="alert alert-success">
-                                                            <h5>Все правильно!</h5>
-                                                        </div>
-                                                    </div>
-                                                    <div class="controls">
-                                                        <input id="tel" name="tel" class="form-control input-large" type="tel" placeholder="+3(099)123-45-67" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваш номер телефона,не меньше 8-и символов" required="">
-                                                    </div>
-
-                                                </div>
-                                                <div class="control-group alert_forms">
-                                                    <div class="alert alert-info">
-                                                        <h5>Внимание!</h5>
-                                                        <p>Все поля обязательны для заполнения</p>
-                                                    </div>
-                                                </div>
-                                                <div class="progress progress-striped active progress_forms">
-                                                    <div class="progress-bar progress-bar-success" style="width: 100%">
-                                                        <span class="sr-only">Завершено 40%</span>
-                                                    </div>
-                                                </div>
-                                                <div class="control-group">
-                                                    <label class="control-label" for="confirmsignup1"></label>
-                                                    <div class="controls">
-                                                        <button id="confirmsignup1" name="confirmsignup1" class="btn btn-success" disabled="disabled">Отправить</button>
-                                                    </div>
-                                                </div>
-                                            </fieldset>
-                                        </form>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="header-bg">
+                        <div class="title_form">
+                            <h1><p>Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            </h1>
+                            <button type="button" class="btn btn-success btn-lg" href="#signup" data-toggle="modal" data-target=".modal1">Заказать</button>
+                            <h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing.></p>
+                                <p>Lorem ipsum dolor sit amet </p>
+                            </h2>
+                            <div class="form">
+                                <div>
+                                    <button type="button" class="btn btn-warning btn-lg" href="#signup2" data-toggle="modal" data-target=".modal2">Мне дорого</button>
                                 </div>
+
                             </div>
-                            <div class="modal-footer">
-                                <center>
-                                    <button type="button" class="btn btn-default contact_form_btn" data-dismiss="modal">Закрыть</button>
-                                </center>
-                            </div>
+
                         </div>
                     </div>
-                </div>
-                    <div class="modal fade bs-modal-sm modal2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                                <br>
-                                <div class="bs-example bs-example-tabs">
-                                    <ul id="myTab2" class="nav nav-tabs">
-                                        <li class="active"><a href="#signup2" data-toggle="tab">Оставить сообщение</a></li>
-                                        <li class=""><a href="#why2" data-toggle="tab">Зачем?</a></li>
-                                    </ul>
-                                </div>
-                                <div class="modal-body">
-                                    <div id="myTabContent2" class="tab-content">
-                                        <div class="tab-pane fade in" id="why2">
-                                            <p><?php the_field('form_quest_2') ?></p>
-                                        </div>
-                                        <div class="tab-pane fade active in" id="signup2">
-                                            <form class="form-horizontal" id="form_2">
-                                                <fieldset>
+                    <div class="popUp">
+                        <div class="modal fade bs-modal-sm modal1" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <br>
+                                    <div class="bs-example bs-example-tabs">
+                                        <ul id="myTab" class="nav nav-tabs">
+                                            <li class="active"><a href="#signup" data-toggle="tab">Оставить сообщение</a></li>
+                                            <li class=""><a href="#why" data-toggle="tab">Зачем?</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="myTabContent" class="tab-content">
+                                            <div class="tab-pane fade in" id="why">
+                                                <p><?php the_field("form_quest_1")?></p>
+                                            </div>
+                                            <div class="tab-pane fade active in" id="signup">
+                                                <form class="form-horizontal" id="form_1">
+                                                    <fieldset>
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="userid">Ваш Email</label>
+                                                            <div class="alert_forms_danger alert_danger_for_email">
+                                                                <div class="alert alert-danger">
+                                                                    <h5>Введены не корректные данные!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="alert_forms_success alert_success_for_email">
+                                                                <div class="alert alert-success">
+                                                                    <h5>Все правильно!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="controls input-group">
+                                                                <span class="input-group-addon">@</span>
+                                                                <input id="userid" name="userid" class="form-control input-large" type="text" placeholder="Введите ваш эмаил адресс"  data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше имя" required="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="tel">Ваш номер телефона</label>
+                                                            <div class="alert_forms_danger alert_danger_for_tel">
+                                                                <div class="alert alert-danger">
+                                                                    <h5>Введены не корректные данные!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="alert_forms_success alert_success_for_tel">
+                                                                <div class="alert alert-success">
+                                                                    <h5>Все правильно!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="controls">
+                                                                <input id="tel" name="tel" class="form-control input-large" type="tel" placeholder="+3(099)123-45-67" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваш номер телефона,не меньше 8-и символов" required="">
+                                                            </div>
 
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="userid2">Ваше имя</label>
-                                                        <div class="alert_forms_danger alert_danger_for_name">
-                                                            <div class="alert alert-danger">
-                                                                <h5>Введены не корректные данные!</h5>
+                                                        </div>
+                                                        <div class="control-group alert_forms">
+                                                            <div class="alert alert-info">
+                                                                <h5>Внимание!</h5>
+                                                                <p>Все поля обязательны для заполнения</p>
                                                             </div>
                                                         </div>
-                                                        <div class="alert_forms_success alert_success_for_name">
-                                                            <div class="alert alert-success">
-                                                                <h5>Все правильно!</h5>
+                                                        <div class="progress progress-striped active progress_forms">
+                                                            <div class="progress-bar progress-bar-success" style="width: 100%">
+                                                                <span class="sr-only">Завершено 40%</span>
                                                             </div>
                                                         </div>
-                                                        <div class="controls input-group">
-                                                            <span class="input-group-addon">Имя</span>
-                                                            <input id="userid2" name="userid2" class="form-control input-large" type="text" placeholder="Введите ваше имя"  data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше имя" required="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="email">Ваш Email</label>
-                                                        <div class="alert_forms_danger alert_danger_for_userid2">
-                                                            <div class="alert alert-danger">
-                                                                <h5>Введены не корректные данные!</h5>
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="confirmsignup1"></label>
+                                                            <div class="controls">
+                                                                <button id="confirmsignup1" name="confirmsignup1" class="btn btn-success" disabled="disabled">Отправить</button>
                                                             </div>
                                                         </div>
-                                                        <div class="alert_forms_success alert_success_for_userid2">
-                                                            <div class="alert alert-success">
-                                                                <h5>Все правильно!</h5>
-                                                            </div>
-                                                        </div>
-                                                        <div class="controls input-group">
-                                                            <span class="input-group-addon">@</span>
-                                                            <input id="email" name="email" class="form-control input-large" type="text" placeholder="Введите ваш эмаил адресс" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваш эмайл" required="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="tel2">Ваш номер телефона</label>
-                                                        <div class="alert_forms_danger alert_danger_for_tel2">
-                                                            <div class="alert alert-danger">
-                                                                <h5>Введены не корректные данные!</h5>
-                                                            </div>
-                                                        </div>
-                                                        <div class="alert_forms_success alert_success_for_tel2">
-                                                            <div class="alert alert-success">
-                                                                <h5>Все правильно!</h5>
-                                                            </div>
-                                                        </div>
-                                                        <div class="controls">
-                                                            <input id="tel2" name="tel2" class="form-control" type="tel" placeholder="+3(099)123-45-67" class="input-large" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше номер телефона,не меньше 8-и символов"  required="">
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="message2">Оставить нам сообщение</label>
-                                                        <div class="controls">
-                                                            <textarea name="message2" id="message2" class="form-control" type="text" placeholder="Оставить нам сообщение" class="input-large" data-toggle="popover"  data-trigger="hover" data-placement="right" title="Подсказка" data-content="Сообщите нам о вашем проекте и мы сделаем для Вас спец. предложение!" rows="3"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group alert_forms">
-                                                        <div class="alert alert-info">
-                                                            <h5>Внимание!</h5>
-                                                            <p>Все поля обязательны для заполнения</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="progress progress-striped active progress_forms">
-                                                        <div class="progress-bar progress-bar-success" style="width: 100%">
-                                                            <span class="sr-only">Завершено 100%</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="control-group">
-                                                        <label class="control-label" for="confirmsignup2"></label>
-                                                        <div class="controls">
-                                                            <button id="confirmsignup2" name="confirmsignup2" class="btn btn-success contact_form_btn" disabled="disabled">Отправить</button>
-                                                        </div>
-                                                    </div>
-                                                </fieldset>
-                                            </form>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="modal-footer">
+                                        <center>
+                                            <button type="button" class="btn btn-default contact_form_btn" data-dismiss="modal">Закрыть</button>
+                                        </center>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <center>
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-                                    </center>
+                            </div>
+                        </div>
+                        <div class="modal fade bs-modal-sm modal2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <br>
+                                    <div class="bs-example bs-example-tabs">
+                                        <ul id="myTab2" class="nav nav-tabs">
+                                            <li class="active"><a href="#signup2" data-toggle="tab">Оставить сообщение</a></li>
+                                            <li class=""><a href="#why2" data-toggle="tab">Зачем?</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="myTabContent2" class="tab-content">
+                                            <div class="tab-pane fade in" id="why2">
+                                                <p><?php the_field('form_quest_2') ?></p>
+                                            </div>
+                                            <div class="tab-pane fade active in" id="signup2">
+                                                <form class="form-horizontal" id="form_2">
+                                                    <fieldset>
+
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="userid2">Ваше имя</label>
+                                                            <div class="alert_forms_danger alert_danger_for_name">
+                                                                <div class="alert alert-danger">
+                                                                    <h5>Введены не корректные данные!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="alert_forms_success alert_success_for_name">
+                                                                <div class="alert alert-success">
+                                                                    <h5>Все правильно!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="controls input-group">
+                                                                <span class="input-group-addon">Имя</span>
+                                                                <input id="userid2" name="userid2" class="form-control input-large" type="text" placeholder="Введите ваше имя"  data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше имя" required="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="email">Ваш Email</label>
+                                                            <div class="alert_forms_danger alert_danger_for_userid2">
+                                                                <div class="alert alert-danger">
+                                                                    <h5>Введены не корректные данные!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="alert_forms_success alert_success_for_userid2">
+                                                                <div class="alert alert-success">
+                                                                    <h5>Все правильно!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="controls input-group">
+                                                                <span class="input-group-addon">@</span>
+                                                                <input id="email" name="email" class="form-control input-large" type="text" placeholder="Введите ваш эмаил адресс" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваш эмайл" required="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="tel2">Ваш номер телефона</label>
+                                                            <div class="alert_forms_danger alert_danger_for_tel2">
+                                                                <div class="alert alert-danger">
+                                                                    <h5>Введены не корректные данные!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="alert_forms_success alert_success_for_tel2">
+                                                                <div class="alert alert-success">
+                                                                    <h5>Все правильно!</h5>
+                                                                </div>
+                                                            </div>
+                                                            <div class="controls">
+                                                                <input id="tel2" name="tel2" class="form-control" type="tel" placeholder="+3(099)123-45-67" class="input-large" data-toggle="popover" data-trigger="hover" data-placement="right" title="Подсказка" data-content="Введите ваше номер телефона,не меньше 8-и символов"  required="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="message2">Оставить нам сообщение</label>
+                                                            <div class="controls">
+                                                                <textarea name="message2" id="message2" class="form-control" type="text" placeholder="Оставить нам сообщение" class="input-large" data-toggle="popover"  data-trigger="hover" data-placement="right" title="Подсказка" data-content="Сообщите нам о вашем проекте и мы сделаем для Вас спец. предложение!" rows="3"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group alert_forms">
+                                                            <div class="alert alert-info">
+                                                                <h5>Внимание!</h5>
+                                                                <p>Все поля обязательны для заполнения</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="progress progress-striped active progress_forms">
+                                                            <div class="progress-bar progress-bar-success" style="width: 100%">
+                                                                <span class="sr-only">Завершено 100%</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label class="control-label" for="confirmsignup2"></label>
+                                                            <div class="controls">
+                                                                <button id="confirmsignup2" name="confirmsignup2" class="btn btn-success contact_form_btn" disabled="disabled">Отправить</button>
+                                                            </div>
+                                                        </div>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <center>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                                        </center>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>
             </header>
             <section>
                 <div class="capabilities">
@@ -260,245 +260,245 @@
                             ремонтных и производственных предприятий.</p>
                     </div>
                 </div>
-                    <div class="container d_item">
+                <div class="container d_item">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="param_block">
+                                <div class="line"></div>
+                                <img src="img/svg/one.svg" alt="Картинка не загрузилась">
+                                <h3>ВЫСОКАЯ ТОЧНОСТЬ ПРОТОТИПОВ</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="param_block">
+                                <div class="line"></div>
+                                <img src="img/svg/two.svg" alt="Картинка не загрузилась">
+                                <h3>ВЫСОКАЯ СКОРОСТЬ ПЕЧАТИ</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="param_block">
+                                <div class="line"></div>
+                                <img src="img/svg/three.svg" alt="Картинка не загрузилась">
+                                <h3>ШИРОКИЙ СПЕКТР МАТЕРИАЛОВ</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 ">
+                            <div class="param_block">
+                                <img src="img/svg/four.svg" alt="Картинка не загрузилась">
+                                <h3>СРАВНИТЕЛЬНО НИЗКАЯ СТОИМОСТЬ 3D-печати</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_cap">
+                    <div class="content_list">
+                        <div class="content_title">
+                            <h1>Возможности 3D печати</h1>
+                            <p><strong>Наши возможности</strong></p>
+                        </div>
+                        <div class="list_title_caption">
+                            <div class="list_title">
+                                <div class="list_title_cap">
+                                    <img src="img/3d_Mod/3d.jpg" alt="картинка не загрузилась">
+                                    <span>
+                                            <h3>Промышленный дизайн и 3D моделирование</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
+                                            </span>
+                                </div>
+                                <div class="list_title_cap">
+                                    <img src="img/3d_Mod/3d_logo.jpg" alt="картинка не загрузилась">
+                                    <span>
+                                            <h3>Мелкосерийное производство изделий из пластика</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
+                                            </span>
+                                </div>
+                                <div class="list_title_cap">
+                                    <img src="img/3d_Mod/4cd9e7.jpg" alt="картинка не загрузилась">
+                                    <span>
+                                            <h3>Изготовление и проектирование пресс-форм</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
+                                            </span>
+                                </div>
+                                <div class="list_title_cap">
+                                    <img src="img/3d_Mod/59138771_1.jpg" alt="картинка не загрузилась">
+                                    <span>
+                                            <h3>Изготовление прототипов</h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
+                                            </span>
+                                </div>
+                                <!--<div class="list_title_cap">-->
+                                <!--<img src="img/3d_Mod/boll.png" alt="картинка не загрузилась">-->
+                                <!--<span>-->
+                                <!--<h3>Изготовление прототипов</h3>-->
+                                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>-->
+                                <!--</span>-->
+                                <!--</div>-->
+                            </div>
+                            <div class="list_descript">
+                                <img src="img/o-3D-PRINTING-facebook.jpg" alt="картинка не загрузилась">
+                                <span>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                                                Praesent sit amet purus id risus mollis tempor.<br>
+                                                In vitae viverra sem, quis tempor ante. Aliquam vitae volutpat diam.<br>
+                                                Morbi efficitur vel tortor ac cursus.<br>
+                                                Duis elementum urna non velit sagittis tempor. Vivamus sit amet metus urna. Proin eget accumsan dolor.<br>
+                                                </p>
+                                        </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="content_title work_color">
+                        <h1>Как это работает?</h1>
+                        <p><strong>Почему выбирают именно нас</strong></p>
+                    </div>
+                    <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-3 col-sm-6">
                                 <div class="param_block">
                                     <div class="line"></div>
                                     <img src="img/svg/one.svg" alt="Картинка не загрузилась">
-                                    <h3>ВЫСОКАЯ ТОЧНОСТЬ ПРОТОТИПОВ</h3>
-                                    <p></p>
+                                    <h3>Заявка</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="param_block">
                                     <div class="line"></div>
                                     <img src="img/svg/two.svg" alt="Картинка не загрузилась">
-                                    <h3>ВЫСОКАЯ СКОРОСТЬ ПЕЧАТИ</h3>
-                                    <p></p>
+                                    <h3>Просчет</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="param_block">
                                     <div class="line"></div>
                                     <img src="img/svg/three.svg" alt="Картинка не загрузилась">
-                                    <h3>ШИРОКИЙ СПЕКТР МАТЕРИАЛОВ</h3>
-                                    <p></p>
+                                    <h3>3D печать</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi.</p>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6 ">
                                 <div class="param_block">
                                     <img src="img/svg/four.svg" alt="Картинка не загрузилась">
-                                    <h3>СРАВНИТЕЛЬНО НИЗКАЯ СТОИМОСТЬ 3D-печати</h3>
-                                    <p></p>
+                                    <h3>Получение заказа через 2-4 дня!</h3>
+                                    <p>В компании 3D ATELIER минимальная стоимость FDM-печати от 5грн./грамм изделия.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="list_cap">
-                        <div class="content_list">
-                            <div class="content_title">
-                                <h1>Возможности 3D печати</h1>
-                                <p><strong>Наши возможности</strong></p>
-                            </div>
-                            <div class="list_title_caption">
-                                <div class="list_title">
-                                    <div class="list_title_cap">
-                                        <img src="img/3d_Mod/3d.jpg" alt="картинка не загрузилась">
-                                        <span>
-                                        <h3>Промышленный дизайн и 3D моделирование</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
-                                        </span>
-                                    </div>
-                                    <div class="list_title_cap">
-                                        <img src="img/3d_Mod/3d_logo.jpg" alt="картинка не загрузилась">
-                                        <span>
-                                        <h3>Мелкосерийное производство изделий из пластика</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
-                                        </span>
-                                    </div>
-                                    <div class="list_title_cap">
-                                        <img src="img/3d_Mod/4cd9e7.jpg" alt="картинка не загрузилась">
-                                        <span>
-                                        <h3>Изготовление и проектирование пресс-форм</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
-                                        </span>
-                                    </div>
-                                    <div class="list_title_cap">
-                                        <img src="img/3d_Mod/59138771_1.jpg" alt="картинка не загрузилась">
-                                        <span>
-                                        <h3>Изготовление прототипов</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>
-                                        </span>
-                                    </div>
-                                    <!--<div class="list_title_cap">-->
-                                        <!--<img src="img/3d_Mod/boll.png" alt="картинка не загрузилась">-->
-                                        <!--<span>-->
-                                        <!--<h3>Изготовление прототипов</h3>-->
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi</p>-->
-                                        <!--</span>-->
-                                    <!--</div>-->
-                                </div>
-                                <div class="list_descript">
-                                    <img src="img/o-3D-PRINTING-facebook.jpg" alt="картинка не загрузилась">
-                                    <span>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
-                                            Praesent sit amet purus id risus mollis tempor.<br>
-                                            In vitae viverra sem, quis tempor ante. Aliquam vitae volutpat diam.<br>
-                                            Morbi efficitur vel tortor ac cursus.<br>
-                                            Duis elementum urna non velit sagittis tempor. Vivamus sit amet metus urna. Proin eget accumsan dolor.<br>
-                                            </p>
-                                    </span>
-                                </div>
-                            </div>
-
-                        </div>
+                </div>
+                <div class="questions">
+                    <div class="content_title work_color">
+                        <h1>Остались вопросы?</h1>
+                        <p><strong>Оформите заявку сейчас и получите скидку 10%</strong></p>
                     </div>
-                    <div class="work">
-                        <div class="content_title work_color">
-                            <h1>Как это работает?</h1>
-                            <p><strong>Почему выбирают именно нас</strong></p>
-                        </div>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="param_block">
-                                        <div class="line"></div>
-                                        <img src="img/svg/one.svg" alt="Картинка не загрузилась">
-                                        <h3>Заявка</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="param_block">
-                                        <div class="line"></div>
-                                        <img src="img/svg/two.svg" alt="Картинка не загрузилась">
-                                        <h3>Просчет</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6">
-                                    <div class="param_block">
-                                        <div class="line"></div>
-                                        <img src="img/svg/three.svg" alt="Картинка не загрузилась">
-                                        <h3>3D печать</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo qui nam beatae eligendi quia pariatur facere consequatur libero dolore excepturi.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-6 ">
-                                    <div class="param_block">
-                                        <img src="img/svg/four.svg" alt="Картинка не загрузилась">
-                                        <h3>Получение заказа через 2-4 дня!</h3>
-                                        <p>В компании 3D ATELIER минимальная стоимость FDM-печати от 5грн./грамм изделия.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="button">
+                        <button type="button" class="btn btn-success btn-lg" href="#signup" data-toggle="modal" data-target=".modal2">Задайте вопрос</button>
                     </div>
-                    <div class="questions">
-                        <div class="content_title work_color">
-                            <h1>Остались вопросы?</h1>
-                            <p><strong>Оформите заявку сейчас и получите скидку 10%</strong></p>
+                </div>
+                <div class="confidence">
+                    <div class="confidence_title">
+                        <div class="content_title">
+                            <p><strong>Нам доверяют</strong></p>
                         </div>
-                        <div class="button">
-                            <button type="button" class="btn btn-success btn-lg" href="#signup" data-toggle="modal" data-target=".modal2">Задайте вопрос</button>
-                        </div>
-                    </div>
-                    <div class="confidence">
-                        <div class="confidence_title">
-                            <div class="content_title">
-                                <p><strong>Нам доверяют</strong></p>
-                            </div>
-                            <div class="carousel_boot">
-                                <!-- Навигация для карусели -->
-                                <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
-                                <div class="carousel_bootstrap">
-                                    <div class="examplecarusel">
-                                        <div id="myCarousel2" class="carousel slide" data-interval="5000"
-                                             data-ride="carousel">
-                                            <!-- Слайды карусели -->
-                                            <div class="carousel-inner">
-                                                <!-- 1 слайд -->
-                                                <div class="active item active_item1">
-                                                    <!--<h2></h2>-->
-                                                    <div class="carousel-caption">
-                                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                                            blandit enim in risus venenatis varius.</h3>
-                                                        <!--<p>Описание 1 слайда...</p>-->
-                                                    </div>
+                        <div class="carousel_boot">
+                            <!-- Навигация для карусели -->
+                            <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+                            <div class="carousel_bootstrap">
+                                <div class="examplecarusel">
+                                    <div id="myCarousel2" class="carousel slide" data-interval="5000"
+                                         data-ride="carousel">
+                                        <!-- Слайды карусели -->
+                                        <div class="carousel-inner">
+                                            <!-- 1 слайд -->
+                                            <div class="active item active_item1">
+                                                <!--<h2></h2>-->
+                                                <div class="carousel-caption">
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                                                        blandit enim in risus venenatis varius.</h3>
+                                                    <!--<p>Описание 1 слайда...</p>-->
                                                 </div>
-                                                <div class="item active_item2">
-                                                    <!--<h2></h2>-->
-                                                    <div class="carousel-caption">
-                                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id
-                                                            magna ut.</h3>
-                                                        <!--<p>Описание 2 слайда...</p>-->
-                                                    </div>
+                                            </div>
+                                            <div class="item active_item2">
+                                                <!--<h2></h2>-->
+                                                <div class="carousel-caption">
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id
+                                                        magna ut.</h3>
+                                                    <!--<p>Описание 2 слайда...</p>-->
                                                 </div>
-                                                <div class="item active_item3">
-                                                    <!--<h2></h2>-->
-                                                    <div class="carousel-caption">
-                                                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                                            Praesent maximus sapien metus, eu cursus nisi aliquam eu.</h3>
-                                                        <!--<p>Описание 3 слайда...</p>-->
-                                                    </div>
+                                            </div>
+                                            <div class="item active_item3">
+                                                <!--<h2></h2>-->
+                                                <div class="carousel-caption">
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                        Praesent maximus sapien metus, eu cursus nisi aliquam eu.</h3>
+                                                    <!--<p>Описание 3 слайда...</p>-->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="container">
-                                        <div class="row">
-                                            <!--<div class="customer">-->
-                                            <!--<div class="customer_title">-->
-                                            <div class="customer_1 customer_img slide-one col-md-4 col-sm-4 col-xs-4">
-                                                <div class="customer_items customer_items_1">
-                                                    <img src="img/customer/customer1.png" class="" alt="Responsive image">
-                                                    <h3>Зиданище</h3>
-                                                    <p>Футболист,<br>доволен всем</p>
-                                                </div>
-
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <!--<div class="customer">-->
+                                        <!--<div class="customer_title">-->
+                                        <div class="customer_1 customer_img slide-one col-md-4 col-sm-4 col-xs-4">
+                                            <div class="customer_items customer_items_1">
+                                                <img src="img/customer/customer1.png" class="" alt="Responsive image">
+                                                <h3>Зиданище</h3>
+                                                <p>Футболист,<br>доволен всем</p>
                                             </div>
-                                            <div class="customer_2 customer_img slide-two col-md-4 col-sm-4 col-xs-4">
-                                                <div class="customer_items">
-                                                    <img src="img/customer/customer2.png" class="" alt="Responsive image">
-                                                    <h3>Мэсище</h3>
-                                                    <p>Футболисти ищет 3d работы</p>
-                                                </div>
 
-                                            </div>
-                                            <div class="customer_3 customer_img slide-three col-md-4 col-sm-4 col-xs-4">
-                                                <div class="customer_items">
-                                                    <img src="img/customer/customer3.png" class="" alt="Responsive image">
-                                                    <h3>Озилище</h3>
-                                                    <p>Футболисти ищет 3d работы</p>
-                                                </div>
-
-                                            </div>
                                         </div>
+                                        <div class="customer_2 customer_img slide-two col-md-4 col-sm-4 col-xs-4">
+                                            <div class="customer_items">
+                                                <img src="img/customer/customer2.png" class="" alt="Responsive image">
+                                                <h3>Мэсище</h3>
+                                                <p>Футболисти ищет 3d работы</p>
+                                            </div>
 
+                                        </div>
+                                        <div class="customer_3 customer_img slide-three col-md-4 col-sm-4 col-xs-4">
+                                            <div class="customer_items">
+                                                <img src="img/customer/customer3.png" class="" alt="Responsive image">
+                                                <h3>Озилище</h3>
+                                                <p>Футболисти ищет 3d работы</p>
+                                            </div>
+
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="exampleWorks">
+                </div>
+                <div class="exampleWorks">
 
-                        <h1>Примеры наших работ</h1>
-                        <ul id="imageGallery">
-                            <li><a href="img/3d_Mod/3d.jpg"><img src="img/3d_Mod/3d.jpg" alt="Пример 1"></a></li>
-                            <li><a href="https://unsplash.it/550"><img src="https://unsplash.it/550" alt="Пример 2"></a></li>
-                            <li><a href="https://unsplash.it/520"><img src="https://unsplash.it/520" alt="Пример 3"></a></li>
-                            <li><a href="https://unsplash.it/530"><img src="https://unsplash.it/530" alt="Пример 4"></a></li>
-                            <li><a href="https://unsplash.it/540"><img src="https://unsplash.it/540" alt="Пример 5"></a></li>
-                            <li><a href="https://unsplash.it/550"><img src="https://unsplash.it/550" alt="Пример 6"></a></li>
-                        </ul>
+                    <h1>Примеры наших работ</h1>
+                    <ul id="imageGallery">
+                        <li><a href="img/3d_Mod/3d.jpg"><img src="img/3d_Mod/3d.jpg" alt="Пример 1"></a></li>
+                        <li><a href="https://unsplash.it/550"><img src="https://unsplash.it/550" alt="Пример 2"></a></li>
+                        <li><a href="https://unsplash.it/520"><img src="https://unsplash.it/520" alt="Пример 3"></a></li>
+                        <li><a href="https://unsplash.it/530"><img src="https://unsplash.it/530" alt="Пример 4"></a></li>
+                        <li><a href="https://unsplash.it/540"><img src="https://unsplash.it/540" alt="Пример 5"></a></li>
+                        <li><a href="https://unsplash.it/550"><img src="https://unsplash.it/550" alt="Пример 6"></a></li>
+                    </ul>
 
 
-                    </div>
-                    <div class="apiMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20322.71436849343!2d30.468383247999952!3d50.45340618865218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8650d8309f%3A0xa5c30c1d222c114c!2z0LLRg9C70LjRhtGPINCo0L7Qu9GD0LTQtdC90LrQsCwgMdCRLCDQmtC40ZfQsiwg0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sru!4v1504094488232" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </iframe>
-                    </div>
+                </div>
+                <div class="apiMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20322.71436849343!2d30.468383247999952!3d50.45340618865218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce8650d8309f%3A0xa5c30c1d222c114c!2z0LLRg9C70LjRhtGPINCo0L7Qu9GD0LTQtdC90LrQsCwgMdCRLCDQmtC40ZfQsiwg0KPQutGA0LDQuNC90LA!5e0!3m2!1sru!2sru!4v1504094488232" width="100%" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </iframe>
+                </div>
             </section>
             <footer>
                 <div class="footer">
@@ -519,30 +519,32 @@
                                     <a href="http://3d-atelier.com.ua/blog/">Блог</a>
                                 </div>
                                 <!--<div class="linksFooter col-md-2">-->
-                                    <!--<a href="#">Ссылка</a>-->
-                                    <!--<a href="#">Ссылка</a>-->
-                                    <!--<a href="#">Ссылка</a>-->
+                                <!--<a href="#">Ссылка</a>-->
+                                <!--<a href="#">Ссылка</a>-->
+                                <!--<a href="#">Ссылка</a>-->
                                 <!--</div>-->
                                 <div class="tel col-md-2 col-md-offset-2">
-                                    <span>
-                                        <h5>Телефон</h5>
-                                        <p>+38(095)288-36-48</p>
-                                        <p>+38(096)506-36-48</p>
-                                    </span>
+                                        <span>
+                                            <h5>Телефон</h5>
+                                            <p>+38(095)288-36-48</p>
+                                            <p>+38(096)506-36-48</p>
+                                        </span>
                                 </div>
                                 <div class="tel adress col-md-2">
-                                    <span>
-                                        <h5>Адрес</h5>
-                                        <p>Адрес: Украина, Киев<br>ул. Шолуденко 1Б; Офис 302;</p>
-                                    </span>
+                                        <span>
+                                            <h5>Адрес</h5>
+                                            <p>Адрес: Украина, Киев<br>ул. Шолуденко 1Б; Офис 302;</p>
+                                        </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-
         </div>
+
+
+
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
