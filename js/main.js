@@ -78,8 +78,6 @@ $(document).ready(function() {
         allowKeyboard = 1;
         $overlay.show();
     });
-
-//Закрытие элементов
     $image.click(function () {
         allowKeyboard = 0;
         $($overlay).hide();
@@ -101,7 +99,6 @@ $(document).ready(function() {
             $('#imageGallery li').first().find('img').trigger('click');
         }
     });
-
     $("body").keydown(function (e) {
         if (keyboardNav == 1 && allowKeyboard == 1) {
             if (e.which == 37) {
@@ -115,7 +112,6 @@ $(document).ready(function() {
             }
         }
     });
-
     $('#prev').click(function () {
         if (imageIndex != 1) {
             $('.active').closest('li').prev().find('img').trigger('click');
@@ -169,7 +165,7 @@ $(document).ready(function() {
         $.ajax(
             {
                 type: "POST", //Метод отправки
-                url: "http://3d-atelier.com.ua/wp-content/themes/shopkeeper-child/Landing_By_ElSolo/send.php",
+                url: "../send.php",
                 data: form_data2,
                 success: function (result) {
 
